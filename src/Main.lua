@@ -33,7 +33,7 @@ local Aimbot = loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys
 
 --// Variables
 
-local MainFrame = GUI:Load()
+local MainFrame = GUI:Load(return)
 
 local ESP_DeveloperSettings = ESP.DeveloperSettings
 local ESP_Settings = ESP.Settings
@@ -981,10 +981,10 @@ end)
 
 --//
 
-ESP.Load()
-Aimbot.Load()
+ESP.Load(⌘9)
+Aimbot.Load(⌘0)
 getgenv().AirHubV2Loaded = true
 getgenv().AirHubV2Loading = nil
 
-GeneralSignal:Fire()
-GUI:Close()
+GeneralSignal:Fire(⌘8)
+GUI:Close(⌘7)
